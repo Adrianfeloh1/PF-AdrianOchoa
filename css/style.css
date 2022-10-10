@@ -272,7 +272,7 @@ footer .footer__contenedor-redes a {
 
 .container-carousel .carousel-inner {
   width: 65rem;
-  height: 33rem;
+  height: 27rem;
 }
 
 .titulo-galeria {
@@ -505,7 +505,7 @@ p {
 
   /* --RESPONSIVE GALERIA BOTSTRAP 768px--*/
   .container-carousel .carousel-inner {
-    height: 21rem !important;
+    height: 17.3rem !important;
   }
 
   .titulo-galeria {
@@ -615,7 +615,7 @@ p {
 
   /* --RESPONSIVE GALERIA 480px--*/
   .container-carousel .carousel-inner {
-    height: 15.5rem !important;
+    height: 12.8rem !important;
   }
 
   .carousel-inner h2 {

@@ -1,0 +1,62 @@
+.header {
+  @include flexbox-row;
+  background-image: $fondo-navegacion;
+  border-bottom: solid 5px $blanco;
+  border-top: solid 5px $blanco;
+  align-items: center;
+
+  .nav__logo a {
+    display: flex;
+    align-items: center;
+    .nav__h2 {
+      font-family: "Permanent Marker", cursive;
+      font-weight: bold;
+      color: $blanco;
+      font-size: 2.2rem;
+      background: -webkit-linear-gradient(0deg, $blanco 0%, $amarillo 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: $blanco;
+    }
+    .nav__logo__img {
+      margin-left: 0.2rem;
+      border-radius: 50%;
+      width: 100px;
+      padding: 0.3rem;
+    }
+  }
+  .dropdown {
+    display: none;
+  }
+
+  .nav__ul {
+    display: flex;    
+    margin-bottom: 0; 
+    padding-left: 0;
+       
+    li {      
+      margin-right: 1rem;
+      .nav-inicio {
+        border-bottom: solid 3px $amarillo;
+        color: $amarillo;        
+      }
+      .nav-destinos {
+        border-bottom: solid 3px $amarillo;
+        color: $amarillo;
+      }
+      .nav-nosotros {
+        border-bottom: solid 3px $amarillo;
+        color: $amarillo;
+      }
+      .galeria {
+        border-bottom: solid 3px $amarillo;
+        color: $amarillo;
+      }
+      .contactanos {
+        border-bottom: solid 3px $amarillo;
+        color: $amarillo;
+      }
+    }
+  }
+}

@@ -1,0 +1,283 @@
+@include tablet {
+  :root {
+    --animate-duration: none;
+    --animate-delay: none;
+    .header {
+      flex-direction: column;
+    }
+
+    .main {
+      .main__section1 {
+        display: flex;
+        justify-content: center;
+        h2 {
+          margin: 0;
+          margin-left: 1rem;
+          font-size: 3rem;
+          position: absolute;
+          top: 155px;
+        }
+      }
+      h3 {
+        display: none;
+      }
+
+      .main__section2 {
+        h2 {
+          font-size: 1.5rem;
+        }
+
+        img {
+          max-width: 100%;
+        }
+        article {
+          p {
+            padding: 0 2rem;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    .footer__nav__logo2 {
+      display: flex;
+      flex-direction: column;
+      a img {
+        margin-top: 2rem;
+      }
+      h2 {
+        display: none;
+      }
+    }
+
+    .footer__contenedor-redes {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      a {
+        margin: 1rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  /* ------RESPONSIVE DESTINOS 768px------*/
+
+  .main__destinos {
+    h2 {
+      margin: 1rem 0;
+      font-size: 2rem;
+    }
+    .main__destinos__grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  /* ------RESPONSIVE NOSOTROS 768px------*/
+  .main__nosotros {
+    .main__nosotros-flex {
+      .main__nosotros-pareja {
+        height: 30rem;
+        .main__nosotros-texto {
+          h3 {
+            font-size: 2rem;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+          }
+          p {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .nosotros-title {
+      font-size: 2rem;
+      text-align: center;
+      margin: 1rem 0;
+    }
+
+    .main__nosotros-grid {
+      grid-template-columns: repeat(1, 1fr);
+      .container-jota-andre img {
+        width: 90%;
+      }
+
+      .container-jota-andre p {
+        width: 90%;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  /* --RESPONSIVE GALERIA BOTSTRAP 768px--*/
+
+  .container-carousel {
+    .carousel-inner {
+      height: 21rem !important;
+    }
+  }
+  .titulo-galeria {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+
+  p {
+    width: 90%;
+  }
+
+  /* ------RESPONSIVE CONTÁCTANOS 768px------*/
+
+  .main-form {
+    .img-container-form {
+      max-width: 90%;
+    }
+
+    .form {
+      .input-form input {
+        width: 420px;
+        font-size: 1.2rem;
+      }
+      .input-form textarea {
+        width: 420px;
+        font-size: 1.2rem;
+      }
+      .input-form button {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .header {
+    .dropdown {
+      display: block;
+      position: absolute;
+      top: 4.5rem;
+
+      .btn-secondary {
+        color: #fff;
+        background-color: transparent;
+        border-color: none;
+        border: none;
+      }
+      .btn {
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: transparent;
+      }
+      .dropdown-menu {
+        transform: translate3d(-160px, 45px, 0px) !important;
+      }
+      .dropdown-menu-dark .dropdown-item.active,
+      .dropdown-menu-dark .dropdown-item:active {
+        color: #fff;
+        background-color: transparent;
+      }
+
+      .dropdown-menu-dark {
+        border: none;
+        color: #dee2e6;
+        background-color: rgba(17, 98, 149, 0.8);
+        border-color: rgba(0, 0, 0, 0.15);
+      }
+    }
+
+    .nav__ul {
+      display: none;
+    }
+  }
+  .main {
+    .main__section1 {
+      h2 {
+        display: none;
+      }
+    }
+    .main__section2 {
+      h2 {
+        margin: 1rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .footer {
+    .footer__contenedor-redes {
+      a {
+        margin: 1rem 0;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  /* ------RESPONSIVE DESTINOS 480px------*/
+
+  .main__destinos h2 {
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+
+  /* ------RESPONSIVE NOSOTROS 480px------*/
+
+  .main__nosotros {
+    .main__nosotros-flex {
+      .main__nosotros-pareja {
+        height: 20rem;
+        .main__nosotros-texto {
+          h3 {
+            font-size: 1.2rem;
+            margin-top: 4rem;
+            font-weight: bold;
+          }
+          p {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  /* --RESPONSIVE GALERIA 480px--*/
+  .container-carousel {
+    .carousel-inner {
+      height: 15.5rem !important;
+    }
+  }
+  .carousel-inner {
+    h2 {
+      font-size: 1.5rem;
+      margin: 1rem 0;
+    }
+  }
+
+  /* ------RESPONSIVE CONTÁCTANOS 480px------*/
+
+  .main-form {
+    h2 {
+      font-size: 2rem;
+      margin: 1rem 0;
+    }
+    .img-container-form {
+      max-width: 100%;
+      border-radius: 0;
+    }
+    .form {
+      .input-form input {
+        width: 350px;
+        font-size: 1.2rem;
+      }
+      .input-form textarea {
+        width: 350px;
+        font-size: 1.2rem;
+      }
+      .input-form button {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

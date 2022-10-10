@@ -1,0 +1,25 @@
+* {
+  @include reset
+}
+
+body {
+  font-family: $fuente-principal;
+  background-color:$color-fondo;
+  color: $negro;
+  :root {
+    --animate-duration: 1500ms;
+    --animate-delay: 1s;
+  }
+  a {
+    color: $blanco !important;
+    font-size: $tamanio-enlaces;
+    text-decoration: none;    
+  }
+  li {
+    list-style: none;
+  }
+  p {
+    font-size: $tamanio-parrafos;
+    padding: 0;
+  }
+}

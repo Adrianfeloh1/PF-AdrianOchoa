@@ -1,0 +1,48 @@
+.main {
+  .main__section1 {
+    h2 {
+      margin-left: 5rem;
+      margin-top: 3rem;
+      color: $rojo;
+      font-size: 5rem;
+      position: absolute;
+      top: 85px;
+      font-weight: bold;
+    }
+    img {
+      width: 100%;
+    }
+    h3 {      
+      width: 40%;
+      text-align: justify;
+      margin-left: 1rem;
+      margin-top: 2rem;
+      color:$negro;
+      position: absolute;
+      top: 325px;
+      font-weight: bold;      
+    }
+  }
+
+  .main__section2 {
+    text-align: center;
+    h2 {
+      margin-top: 3rem;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    img {
+      max-width: 70%;      
+    }    
+
+    article {
+      @include flexbox-column;
+      p {
+        text-align: justify;
+        padding: 0 5rem;
+        margin-top: 1.5rem;
+        width: 80%;
+      }
+    }
+  }
+}

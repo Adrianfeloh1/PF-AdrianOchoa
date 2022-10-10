@@ -1,0 +1,650 @@
+@charset "UTF-8";
+
+/* FUENTES */
+/* ENLACES */
+/* PARRAFOS */
+/* COLORES */
+/* MEDIAQUERIES */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Noto Sans Kannada", sans-serif;
+  background-color: #b8c4d4b9;
+  color: #1e1e1f;
+}
+
+body :root {
+  --animate-duration: 1500ms;
+  --animate-delay: 1s;
+}
+
+body a {
+  color: #ffffff !important;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+body li {
+  list-style: none;
+}
+
+body p {
+  font-size: 1rem;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  background-image: linear-gradient(180deg, #082030 0%, #116295 90%);
+  border-bottom: solid 5px #ffffff;
+  border-top: solid 5px #ffffff;
+  align-items: center;
+}
+
+.header .nav__logo a {
+  display: flex;
+  align-items: center;
+}
+
+.header .nav__logo a .nav__h2 {
+  font-family: "Permanent Marker", cursive;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 2.2rem;
+  background: -webkit-linear-gradient(0deg, #ffffff 0%, #f3c14e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: #ffffff;
+}
+
+.header .nav__logo a .nav__logo__img {
+  margin-left: 0.2rem;
+  border-radius: 50%;
+  width: 100px;
+  padding: 0.3rem;
+}
+
+.header .dropdown {
+  display: none;
+}
+
+.header .nav__ul {
+  display: flex;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.header .nav__ul li {
+  margin-right: 1rem;
+}
+
+.header .nav__ul li .nav-inicio {
+  border-bottom: solid 3px #f3c14e;
+  color: #f3c14e;
+}
+
+.header .nav__ul li .nav-destinos {
+  border-bottom: solid 3px #f3c14e;
+  color: #f3c14e;
+}
+
+.header .nav__ul li .nav-nosotros {
+  border-bottom: solid 3px #f3c14e;
+  color: #f3c14e;
+}
+
+.header .nav__ul li .galeria {
+  border-bottom: solid 3px #f3c14e;
+  color: #f3c14e;
+}
+
+.header .nav__ul li .contactanos {
+  border-bottom: solid 3px #f3c14e;
+  color: #f3c14e;
+}
+
+footer {
+  margin: 3rem 0;
+  background-image: url("../assets/images/pareja.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+footer .footer__nav__logo2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+footer .footer__nav__logo2 a img {
+  margin-top: 6rem;
+  max-width: 100%;
+  margin-left: 0.2rem;
+  border-radius: 50%;
+  width: 100px;
+  padding: 0.3rem;
+}
+
+footer .footer__nav__logo2 h2 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 3rem;
+  margin-top: 6rem;
+  margin-right: 8rem;
+  font-family: "Permanent Marker", cursive;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 2.5rem;
+  background: -webkit-linear-gradient(90deg, #194665 0%, #1e86c6 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: #ffffff;
+}
+
+footer .footer__contenedor-redes {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+footer .footer__contenedor-redes a {
+  margin: 2rem;
+}
+
+.main .main__section1 h2 {
+  margin-left: 5rem;
+  margin-top: 3rem;
+  color: #ad2227df;
+  font-size: 5rem;
+  position: absolute;
+  top: 85px;
+  font-weight: bold;
+}
+
+.main .main__section1 img {
+  width: 100%;
+}
+
+.main .main__section1 h3 {
+  width: 40%;
+  text-align: justify;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  color: #1e1e1f;
+  position: absolute;
+  top: 325px;
+  font-weight: bold;
+}
+
+.main .main__section2 {
+  text-align: center;
+}
+
+.main .main__section2 h2 {
+  margin-top: 3rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.main .main__section2 img {
+  max-width: 70%;
+}
+
+.main .main__section2 article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main .main__section2 article p {
+  text-align: justify;
+  padding: 0 5rem;
+  margin-top: 1.5rem;
+  width: 80%;
+}
+
+.main__nosotros .main__nosotros-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.main__nosotros .main__nosotros-flex .main__nosotros-pareja {
+  background-image: url("../assets/images/pareja-nosotros.jpg");
+  height: 55rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+}
+
+.main__nosotros .main__nosotros-flex .main__nosotros-pareja .main__nosotros-texto h3 {
+  color: #2f2d2d;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.main__nosotros .main__nosotros-flex .main__nosotros-pareja .main__nosotros-texto p {
+  text-align: center;
+  margin: auto;
+  width: 65%;
+}
+
+.main__nosotros .nosotros-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.main__nosotros .main__nosotros-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.main__nosotros .main__nosotros-grid .container-jota-andre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__nosotros .main__nosotros-grid .container-jota-andre img {
+  width: 90%;
+}
+
+.main__nosotros .main__nosotros-grid .container-jota-andre p {
+  text-align: justify;
+  width: 90%;
+  margin-top: 1rem;
+}
+
+.container-carousel {
+  display: flex;
+  justify-content: center;
+}
+
+.container-carousel .carousel-inner {
+  width: 65rem;
+  height: 33rem;
+}
+
+.titulo-galeria {
+  text-align: center;
+  margin: 2rem;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.carousel-item {
+  height: 42rem !important;
+}
+
+.carousel-item .d-block {
+  width: 100% !important;
+}
+
+article {
+  display: flex;
+  justify-content: space-around;
+}
+
+p {
+  text-align: justify;
+  padding: 0 5rem;
+  margin-top: 1.5rem;
+  width: 70%;
+}
+
+.main__destinos h2 {
+  font-weight: bold;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.main__destinos .main__destinos__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.main__destinos .main__destinos__grid article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__destinos .main__destinos__grid article img {
+  width: 90%;
+  margin-top: 2rem;
+}
+
+.main__destinos .main__destinos__grid article p {
+  text-align: justify;
+  width: 90%;
+  margin-top: 1rem;
+}
+
+.main-form h2 {
+  margin: 2rem;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.main-form .img-container-form {
+  background-image: url("../assets/images/mapa.webp");
+  height: 38rem;
+  max-width: 80%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: auto;
+  border-radius: 3rem;
+}
+
+.main-form .form {
+  margin-top: -34rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-form .form .input-form {
+  margin-top: 1.5rem;
+}
+
+.main-form .form .input-form input {
+  font-family: "Noto Sans Kannada", sans-serif;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  width: 550px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid #ffffff;
+}
+
+.main-form .form .input-form textarea {
+  font-family: "Noto Sans Kannada", sans-serif;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  width: 550px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid #ffffff;
+}
+
+.main-form .form .input-form button {
+  font-family: "Noto Sans Kannada", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 5rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  border: 2px solid #ffffff;
+  width: 200px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+  :root {
+    --animate-duration: none;
+    --animate-delay: none;
+  }
+
+  :root .header {
+    flex-direction: column;
+  }
+
+  :root .main .main__section1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  :root .main .main__section1 h2 {
+    margin: 0;
+    margin-left: 1rem;
+    font-size: 3rem;
+    position: absolute;
+    top: 155px;
+  }
+
+  :root .main h3 {
+    display: none;
+  }
+
+  :root .main .main__section2 h2 {
+    font-size: 1.5rem;
+  }
+
+  :root .main .main__section2 img {
+    max-width: 100%;
+  }
+
+  :root .main .main__section2 article p {
+    padding: 0 2rem;
+    width: 100%;
+  }
+
+  .footer .footer__nav__logo2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer .footer__nav__logo2 a img {
+    margin-top: 2rem;
+  }
+
+  .footer .footer__nav__logo2 h2 {
+    display: none;
+  }
+
+  .footer .footer__contenedor-redes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .footer .footer__contenedor-redes a {
+    margin: 1rem;
+    font-size: 1.5rem;
+  }
+
+  /* ------RESPONSIVE DESTINOS 768px------*/
+  .main__destinos h2 {
+    margin: 1rem 0;
+    font-size: 2rem;
+  }
+
+  .main__destinos .main__destinos__grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* ------RESPONSIVE NOSOTROS 768px------*/
+  .main__nosotros .main__nosotros-flex .main__nosotros-pareja {
+    height: 30rem;
+  }
+
+  .main__nosotros .main__nosotros-flex .main__nosotros-pareja .main__nosotros-texto h3 {
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .main__nosotros .main__nosotros-flex .main__nosotros-pareja .main__nosotros-texto p {
+    display: none;
+  }
+
+  .main__nosotros .nosotros-title {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+  .main__nosotros .main__nosotros-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .main__nosotros .main__nosotros-grid .container-jota-andre img {
+    width: 90%;
+  }
+
+  .main__nosotros .main__nosotros-grid .container-jota-andre p {
+    width: 90%;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  /* --RESPONSIVE GALERIA BOTSTRAP 768px--*/
+  .container-carousel .carousel-inner {
+    height: 21rem !important;
+  }
+
+  .titulo-galeria {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+
+  p {
+    width: 90%;
+  }
+
+  /* ------RESPONSIVE CONTÁCTANOS 768px------*/
+  .main-form .img-container-form {
+    max-width: 90%;
+  }
+
+  .main-form .form .input-form input {
+    width: 420px;
+    font-size: 1.2rem;
+  }
+
+  .main-form .form .input-form textarea {
+    width: 420px;
+    font-size: 1.2rem;
+  }
+
+  .main-form .form .input-form button {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header .dropdown {
+    display: block;
+    position: absolute;
+    top: 4.5rem;
+  }
+
+  .header .dropdown .btn-secondary {
+    color: #fff;
+    background-color: transparent;
+    border-color: none;
+    border: none;
+  }
+
+  .header .dropdown .btn {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: transparent;
+  }
+
+  .header .dropdown .dropdown-menu {
+    transform: translate3d(-160px, 45px, 0px) !important;
+  }
+
+  .header .dropdown .dropdown-menu-dark .dropdown-item.active,
+  .header .dropdown .dropdown-menu-dark .dropdown-item:active {
+    color: #fff;
+    background-color: transparent;
+  }
+
+  .header .dropdown .dropdown-menu-dark {
+    border: none;
+    color: #dee2e6;
+    background-color: rgba(17, 98, 149, 0.8);
+    border-color: rgba(0, 0, 0, 0.15);
+  }
+
+  .header .nav__ul {
+    display: none;
+  }
+
+  .main .main__section1 h2 {
+    display: none;
+  }
+
+  .main .main__section2 h2 {
+    margin: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .footer .footer__contenedor-redes a {
+    margin: 1rem 0;
+    font-size: 1rem;
+  }
+
+  /* ------RESPONSIVE DESTINOS 480px------*/
+  .main__destinos h2 {
+    font-size: 1.5rem;
+    margin: 1rem;
+  }
+
+  /* ------RESPONSIVE NOSOTROS 480px------*/
+  .main__nosotros .main__nosotros-flex .main__nosotros-pareja {
+    height: 20rem;
+  }
+
+  .main__nosotros .main__nosotros-flex .main__nosotros-pareja .main__nosotros-texto h3 {
+    font-size: 1.2rem;
+    margin-top: 4rem;
+    font-weight: bold;
+  }
+
+  .main__nosotros .main__nosotros-flex .main__nosotros-pareja .main__nosotros-texto p {
+    display: none;
+  }
+
+  /* --RESPONSIVE GALERIA 480px--*/
+  .container-carousel .carousel-inner {
+    height: 15.5rem !important;
+  }
+
+  .carousel-inner h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  /* ------RESPONSIVE CONTÁCTANOS 480px------*/
+  .main-form h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+
+  .main-form .img-container-form {
+    max-width: 100%;
+    border-radius: 0;
+  }
+
+  .main-form .form .input-form input {
+    width: 350px;
+    font-size: 1.2rem;
+  }
+
+  .main-form .form .input-form textarea {
+    width: 350px;
+    font-size: 1.2rem;
+  }
+
+  .main-form .form .input-form button {
+    font-size: 1.2rem;
+  }
+}

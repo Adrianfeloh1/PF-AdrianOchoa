@@ -1,0 +1,37 @@
+
+.container-carousel{
+    display: flex;
+    justify-content: center;    
+    
+    .carousel-inner{
+        width: 65rem;
+        height: 33rem;        
+    }
+}
+
+.titulo-galeria {
+    text-align: center;
+    margin: 2rem;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.carousel-item {
+    height: 42rem !important;
+    .d-block {
+        width: 100% !important;
+    }
+}
+
+article{
+    @include flexbox-row;
+}
+
+p {
+    text-align: justify;
+    padding: 0 5rem;
+    margin-top: 1.5rem;
+    width: 70%;    
+}
+
+

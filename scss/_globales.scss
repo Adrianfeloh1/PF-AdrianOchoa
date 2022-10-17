@@ -1,8 +1,13 @@
 * {
-  @include reset
+  @include reset;   
+}
+
+html{
+  overflow-x: hidden;  
 }
 
 body {
+  overflow-x: hidden;
   font-family: $fuente-principal;
   background-color:$color-fondo;
   color: $negro;

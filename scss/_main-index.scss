@@ -1,13 +1,14 @@
 .main {
   .main__section1 {
     h2 {
-      margin-left: 5rem;
-      margin-top: 3rem;
+      font-family: "Permanent Marker", cursive;
+      text-align: center;
+      margin-left: 1rem;
+      margin-top: 4rem;
       color: $rojo;
-      font-size: 5rem;
+      font-size: 4rem;
       position: absolute;
-      top: 85px;
-      font-weight: bold;
+      top: 60px;      
     }
     img {
       width: 100%;
@@ -17,9 +18,9 @@
       text-align: justify;
       margin-left: 1rem;
       margin-top: 2rem;
-      color:$negro;
+      color: $azul-oscuro;
       position: absolute;
-      top: 325px;
+      top: 350px;
       font-weight: bold;      
     }
   }
@@ -27,13 +28,20 @@
   .main__section2 {
     text-align: center;
     h2 {
+      font-family: "Permanent Marker", cursive;
+      color: $azul;
       margin-top: 3rem;
-      font-size: 2rem;
+      font-size: 2.5rem;
       font-weight: bold;
-    }
-    img {
-      max-width: 70%;      
     }    
+
+    article img {
+      width: 60%;      
+    }      
+
+    .video-tips iframe{
+      width: 100%;
+    }
 
     article {
       @include flexbox-column;
@@ -41,7 +49,7 @@
         text-align: justify;
         padding: 0 5rem;
         margin-top: 1.5rem;
-        width: 80%;
+        width: 75%;
       }
     }
   }

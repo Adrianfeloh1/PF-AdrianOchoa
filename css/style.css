@@ -15,7 +15,7 @@ html {
 body {
   overflow-x: hidden;
   font-family: "Noto Sans Kannada", sans-serif;
-  background-color: #b8c4d4b9;
+  background-color: rgba(17, 100, 151, 0.2);
   color: #1e1e1f; }
   body :root {
     --animate-duration: 1500ms;
@@ -45,7 +45,7 @@ body {
       font-weight: bold;
       color: #ffffff;
       font-size: 2.2rem;
-      background: -webkit-linear-gradient(0deg, #ffffff 0%, #f3c14e 100%);
+      background: -webkit-linear-gradient(90deg, #ad2227df 10%, #ffffff 50%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -64,20 +64,20 @@ body {
     .header .nav__ul li {
       margin-right: 1rem; }
       .header .nav__ul li .nav-inicio {
-        border-bottom: solid 3px #f3c14e;
-        color: #f3c14e; }
+        border-bottom: solid 3px #ffffff;
+        color: #ffffff; }
       .header .nav__ul li .nav-destinos {
-        border-bottom: solid 3px #f3c14e;
-        color: #f3c14e; }
+        border-bottom: solid 3px #ffffff;
+        color: #ffffff; }
       .header .nav__ul li .nav-nosotros {
-        border-bottom: solid 3px #f3c14e;
-        color: #f3c14e; }
+        border-bottom: solid 3px #ffffff;
+        color: #ffffff; }
       .header .nav__ul li .galeria {
-        border-bottom: solid 3px #f3c14e;
-        color: #f3c14e; }
+        border-bottom: solid 3px #ffffff;
+        color: #ffffff; }
       .header .nav__ul li .contactanos {
-        border-bottom: solid 3px #f3c14e;
-        color: #f3c14e; }
+        border-bottom: solid 3px #ffffff;
+        color: #ffffff; }
 
 footer {
   background-image: url("../assets/images/pareja.webp");
@@ -88,7 +88,7 @@ footer {
     justify-content: flex-end;
     align-items: center; }
     footer .footer__nav__logo2 a img {
-      margin-top: 6rem;
+      margin-top: 10rem;
       max-width: 100%;
       margin-left: 0.2rem;
       border-radius: 50%;
@@ -97,13 +97,13 @@ footer {
     footer .footer__nav__logo2 h2 {
       font-family: "Permanent Marker", cursive;
       font-size: 3rem;
-      margin-top: 6rem;
+      margin-top: 10rem;
       margin-right: 8rem;
       font-family: "Permanent Marker", cursive;
       font-weight: bold;
       color: #ffffff;
       font-size: 2.5rem;
-      background: -webkit-linear-gradient(90deg, #194665 0%, #1e86c6 90%);
+      background: -webkit-linear-gradient(90deg, #ffffff 0%, #ad2227df 20%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -114,16 +114,17 @@ footer {
     justify-content: flex-end;
     align-items: center; }
     footer .footer__contenedor-redes a {
-      margin: 2rem; }
+      margin: 1rem 2rem; }
 
 .main .main__section1 h2 {
-  margin-left: 5rem;
-  margin-top: 3rem;
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+  margin-left: 1rem;
+  margin-top: 4rem;
   color: #ad2227df;
-  font-size: 5rem;
+  font-size: 4rem;
   position: absolute;
-  top: 85px;
-  font-weight: bold; }
+  top: 60px; }
 
 .main .main__section1 img {
   width: 100%; }
@@ -133,19 +134,23 @@ footer {
   text-align: justify;
   margin-left: 1rem;
   margin-top: 2rem;
-  color: #1e1e1f;
+  color: #082030;
   position: absolute;
-  top: 325px;
+  top: 350px;
   font-weight: bold; }
 
 .main .main__section2 {
   text-align: center; }
   .main .main__section2 h2 {
+    font-family: "Permanent Marker", cursive;
+    color: #116295;
     margin-top: 3rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold; }
-  .main .main__section2 img {
-    max-width: 70%; }
+  .main .main__section2 article img {
+    width: 60%; }
+  .main .main__section2 .video-tips iframe {
+    width: 100%; }
   .main .main__section2 article {
     display: flex;
     flex-direction: column;
@@ -154,7 +159,7 @@ footer {
       text-align: justify;
       padding: 0 5rem;
       margin-top: 1.5rem;
-      width: 80%; }
+      width: 75%; }
 
 .main__nosotros .main__nosotros-flex {
   display: flex;
@@ -167,7 +172,7 @@ footer {
     background-position: center;
     width: 100%; }
     .main__nosotros .main__nosotros-flex .main__nosotros-pareja .main__nosotros-texto h3 {
-      color: #2f2d2d;
+      color: #082030;
       font-size: 2.5rem;
       text-align: center;
       margin-top: 5rem;
@@ -180,7 +185,9 @@ footer {
 .main__nosotros .nosotros-title {
   font-size: 2.5rem;
   text-align: center;
-  margin: 3rem 0; }
+  margin: 3rem 0;
+  font-family: "Permanent Marker", cursive;
+  color: #116295; }
 
 .main__nosotros .main__nosotros-grid {
   display: grid;
@@ -207,7 +214,9 @@ footer {
   text-align: center;
   margin: 2rem;
   font-weight: bold;
-  font-size: 3rem; }
+  font-size: 3rem;
+  font-family: "Permanent Marker", cursive;
+  color: #116295; }
 
 .carousel-item {
   height: 42rem !important; }
@@ -228,18 +237,38 @@ p {
   font-weight: bold;
   margin-top: 2rem;
   text-align: center;
-  font-size: 3rem; }
+  font-size: 3rem;
+  font-family: "Permanent Marker", cursive;
+  color: #116295; }
 
 .main__destinos .main__destinos__grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); }
+  grid-template-columns: repeat(3, 1fr); }
+  .main__destinos .main__destinos__grid .accordion-button {
+    font-family: "Noto Sans Kannada", sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #116295;
+    font-weight: bold;
+    margin-bottom: 1rem; }
+  .main__destinos .main__destinos__grid .accordion-item {
+    margin: auto;
+    width: 95%; }
+  .main__destinos .main__destinos__grid .collapse {
+    text-align: justify;
+    width: 100%; }
   .main__destinos .main__destinos__grid article {
     display: flex;
     flex-direction: column;
     align-items: center; }
     .main__destinos .main__destinos__grid article img {
-      width: 90%;
+      width: 95%;
       margin-top: 2rem; }
+    .main__destinos .main__destinos__grid article h3 {
+      font-weight: bold;
+      margin-top: 1rem;
+      text-align: center;
+      font-size: 1.8rem; }
     .main__destinos .main__destinos__grid article p {
       text-align: justify;
       width: 90%;
@@ -249,7 +278,9 @@ p {
   margin: 2rem;
   text-align: center;
   font-size: 3rem;
-  font-weight: bold; }
+  font-weight: bold;
+  font-family: "Permanent Marker", cursive;
+  color: #116295; }
 
 .main-form .img-container-form {
   background-image: url("../assets/images/mapa.webp");
@@ -315,8 +346,8 @@ p {
       display: none; }
     :root .main .main__section2 h2 {
       font-size: 1.5rem; }
-    :root .main .main__section2 img {
-      max-width: 100%; }
+    :root .main .main__section2 article img {
+      width: 100%; }
     :root .main .main__section2 article p {
       padding: 0 2rem;
       width: 100%; }
@@ -340,7 +371,11 @@ p {
     font-size: 2rem; }
   .main__destinos .main__destinos__grid {
     display: grid;
-    grid-template-columns: repeat(1, 1fr); }
+    grid-template-columns: repeat(2, 1fr); }
+    .main__destinos .main__destinos__grid article img {
+      width: 95%; }
+    .main__destinos .main__destinos__grid .accordion-item {
+      width: 95%; }
   /* ------RESPONSIVE NOSOTROS 768px------*/
   .main__nosotros .main__nosotros-flex .main__nosotros-pareja {
     height: 30rem; }
@@ -412,15 +447,21 @@ p {
   .main .main__section1 h2 {
     display: none; }
   .main .main__section2 h2 {
-    margin: 1rem;
-    font-size: 1.5rem; }
+    margin: 1rem; }
   .footer .footer__contenedor-redes a {
     margin: 1rem 0;
     font-size: 1rem; }
   /* ------RESPONSIVE DESTINOS 480px------*/
   .main__destinos h2 {
-    font-size: 1.5rem;
-    margin: 1rem; }
+    margin: 0.5rem;
+    font-size: 1.5rem; }
+  .main__destinos .main__destinos__grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); }
+    .main__destinos .main__destinos__grid article img {
+      width: 100%; }
+    .main__destinos .main__destinos__grid .accordion-item {
+      width: 100%; }
   /* ------RESPONSIVE NOSOTROS 480px------*/
   .main__nosotros .main__nosotros-flex .main__nosotros-pareja {
     height: 20rem; }

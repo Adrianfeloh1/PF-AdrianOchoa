@@ -4,18 +4,49 @@
     margin-top: 2rem;
     text-align: center;
     font-size: 3rem;
+    font-family: $fuente-logo;
+    color: $azul;
   }
-  .main__destinos__grid {
+
+  .main__destinos__grid {    
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    
+    
+    .accordion-button{      
+      font-family: $fuente-principal;
+      font-size: 1.2rem;
+      text-align: center;
+      color: $azul;
+      font-weight: bold;
+      margin-bottom: 1rem;      
+    }
+
+    .accordion-item{   
+      margin: auto;           
+      width: 95%;        
+    }
+
+    .collapse{
+      text-align: justify;
+      width: 100%;
+    }
+
     article {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      @include flexbox-column;      
+
       img {
-        width: 90%;
-        margin-top: 2rem;        
+        width: 95%;
+        margin-top: 2rem;
       }
+
+      h3 {
+        font-weight: bold;
+        margin-top: 1rem;
+        text-align: center;
+        font-size: 1.8rem;
+      }
+
       p {
         text-align: justify;
         width: 90%;

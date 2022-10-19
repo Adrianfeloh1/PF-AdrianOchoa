@@ -13,7 +13,7 @@
       font-weight: bold;
       color: $blanco;
       font-size: 2.2rem;
-      background: -webkit-linear-gradient(0deg, $blanco 0%, $amarillo 100%);
+      background: -webkit-linear-gradient(90deg, $rojo 10%, $blanco 50%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -38,24 +38,24 @@
     li {      
       margin-right: 1rem;
       .nav-inicio {
-        border-bottom: solid 3px $amarillo;
-        color: $amarillo;        
+        border-bottom: solid 3px $blanco;
+        color: $blanco;        
       }
       .nav-destinos {
-        border-bottom: solid 3px $amarillo;
-        color: $amarillo;
+        border-bottom: solid 3px $blanco;
+        color: $blanco;
       }
       .nav-nosotros {
-        border-bottom: solid 3px $amarillo;
-        color: $amarillo;
+        border-bottom: solid 3px $blanco;
+        color: $blanco;
       }
       .galeria {
-        border-bottom: solid 3px $amarillo;
-        color: $amarillo;
+        border-bottom: solid 3px $blanco;
+        color: $blanco;
       }
       .contactanos {
-        border-bottom: solid 3px $amarillo;
-        color: $amarillo;
+        border-bottom: solid 3px $blanco;
+        color: $blanco;
       }
     }
   }

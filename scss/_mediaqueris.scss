@@ -112,7 +112,6 @@
         }
       }
     }
-
     .nosotros-title {
       font-size: 2rem;
       text-align: center;
@@ -130,6 +129,18 @@
         width: 90%;
         font-size: 1rem;
         margin-bottom: 1rem;
+      }
+    }
+    .juntos{      
+      height: 30rem; 
+      p{       
+        font-size: 2rem;  
+        width: 90%; 
+        bottom: 2rem;
+  
+        span{
+          color: #fd7a3e;       
+        }
       }
     }
   }
@@ -263,10 +274,8 @@
         width: 100%;        
       }
     }
-
   }
   
-
   /* ------RESPONSIVE NOSOTROS 480px------*/
 
   .main__nosotros {
@@ -284,6 +293,19 @@
           p {
             display: none;
           }
+        }
+      }
+    }    
+    .juntos{      
+      height: 22rem; 
+      p{       
+        font-size: 1.5rem;  
+        width: 85%; 
+        text-align: center;
+        bottom: 1rem;
+  
+        span{
+          color: #fd7a3e;       
         }
       }
     }

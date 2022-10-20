@@ -14,7 +14,7 @@ html {
 
 body {
   overflow-x: hidden;
-  font-family: "Noto Sans Kannada", sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-color: rgba(17, 100, 151, 0.2);
   color: #1e1e1f; }
   body :root {
@@ -44,7 +44,7 @@ body {
       font-family: "Permanent Marker", cursive;
       font-weight: bold;
       color: #ffffff;
-      font-size: 2.2rem;
+      font-size: 2.5rem;
       background: -webkit-linear-gradient(90deg, #ad2227df 10%, #ffffff 50%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -54,7 +54,7 @@ body {
       margin-left: 0.2rem;
       border-radius: 50%;
       width: 100px;
-      padding: 0.3rem; }
+      padding: 0.2rem; }
   .header .dropdown {
     display: none; }
   .header .nav__ul {
@@ -64,19 +64,19 @@ body {
     .header .nav__ul li {
       margin-right: 1rem; }
       .header .nav__ul li .nav-inicio {
-        border-bottom: solid 3px #ffffff;
+        border-bottom: solid 2px #ffffff;
         color: #ffffff; }
       .header .nav__ul li .nav-destinos {
-        border-bottom: solid 3px #ffffff;
+        border-bottom: solid 2px #ffffff;
         color: #ffffff; }
       .header .nav__ul li .nav-nosotros {
-        border-bottom: solid 3px #ffffff;
+        border-bottom: solid 2px #ffffff;
         color: #ffffff; }
       .header .nav__ul li .galeria {
-        border-bottom: solid 3px #ffffff;
+        border-bottom: solid 2px #ffffff;
         color: #ffffff; }
       .header .nav__ul li .contactanos {
-        border-bottom: solid 3px #ffffff;
+        border-bottom: solid 2px #ffffff;
         color: #ffffff; }
 
 footer {
@@ -117,7 +117,8 @@ footer {
       margin: 1rem 2rem; }
 
 .main .main__section1 h2 {
-  font-family: "Permanent Marker", cursive;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
   text-align: center;
   margin-left: 1rem;
   margin-top: 4rem;
@@ -134,15 +135,15 @@ footer {
   text-align: justify;
   margin-left: 1rem;
   margin-top: 2rem;
-  color: #082030;
+  color: #1e1e1f;
   position: absolute;
-  top: 350px;
+  top: 300px;
   font-weight: bold; }
 
 .main .main__section2 {
   text-align: center; }
   .main .main__section2 h2 {
-    font-family: "Permanent Marker", cursive;
+    font-family: "Montserrat", sans-serif;
     color: #116295;
     margin-top: 3rem;
     font-size: 2.5rem;
@@ -172,21 +173,25 @@ footer {
     background-position: center;
     width: 100%; }
     .main__nosotros .main__nosotros-flex .main__nosotros-pareja .main__nosotros-texto h3 {
-      color: #082030;
+      color: #1e1e1f;
+      font-weight: bold;
       font-size: 2.5rem;
       text-align: center;
       margin-top: 5rem;
       margin-bottom: 3rem; }
     .main__nosotros .main__nosotros-flex .main__nosotros-pareja .main__nosotros-texto p {
+      color: #1e1e1f;
+      font-weight: bold;
       text-align: center;
       margin: auto;
-      width: 65%; }
+      width: 75%; }
 
 .main__nosotros .nosotros-title {
   font-size: 2.5rem;
   text-align: center;
-  margin: 3rem 0;
-  font-family: "Permanent Marker", cursive;
+  margin: 1.5rem 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
   color: #116295; }
 
 .main__nosotros .main__nosotros-grid {
@@ -198,10 +203,33 @@ footer {
     align-items: center; }
     .main__nosotros .main__nosotros-grid .container-jota-andre img {
       width: 90%; }
+    .main__nosotros .main__nosotros-grid .container-jota-andre h2 {
+      margin-top: 1rem;
+      font-weight: bold;
+      color: #1e1e1f; }
     .main__nosotros .main__nosotros-grid .container-jota-andre p {
       text-align: justify;
+      color: #1e1e1f;
       width: 90%;
       margin-top: 1rem; }
+
+.main__nosotros .juntos {
+  background-image: url("../assets/images/juntos1.webp");
+  background-position: center;
+  background-size: cover;
+  height: 40rem;
+  position: relative; }
+  .main__nosotros .juntos p {
+    font-family: "Permanent Marker", cursive;
+    font-size: 2.5rem;
+    color: #ffffff;
+    width: 70%;
+    position: absolute;
+    left: 2rem;
+    bottom: 3rem;
+    text-align: justify; }
+    .main__nosotros .juntos p span {
+      color: #fd7a3e; }
 
 .container-carousel {
   display: flex;
@@ -215,7 +243,7 @@ footer {
   margin: 2rem;
   font-weight: bold;
   font-size: 3rem;
-  font-family: "Permanent Marker", cursive;
+  font-family: "Montserrat", sans-serif;
   color: #116295; }
 
 .carousel-item {
@@ -238,14 +266,14 @@ p {
   margin-top: 2rem;
   text-align: center;
   font-size: 3rem;
-  font-family: "Permanent Marker", cursive;
+  font-family: "Montserrat", sans-serif;
   color: #116295; }
 
 .main__destinos .main__destinos__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); }
   .main__destinos .main__destinos__grid .accordion-button {
-    font-family: "Noto Sans Kannada", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 1.2rem;
     text-align: center;
     color: #116295;
@@ -299,7 +327,7 @@ p {
   .main-form .form .input-form {
     margin-top: 1.5rem; }
     .main-form .form .input-form input {
-      font-family: "Noto Sans Kannada", sans-serif;
+      font-family: "Montserrat", sans-serif;
       font-size: 1.5rem;
       padding: 1rem;
       border-radius: 1rem;
@@ -308,7 +336,7 @@ p {
       background-color: rgba(0, 0, 0, 0.8);
       border: 2px solid #ffffff; }
     .main-form .form .input-form textarea {
-      font-family: "Noto Sans Kannada", sans-serif;
+      font-family: "Montserrat", sans-serif;
       font-size: 1.5rem;
       padding: 1rem;
       border-radius: 1rem;
@@ -317,7 +345,7 @@ p {
       background-color: rgba(0, 0, 0, 0.8);
       border: 2px solid #ffffff; }
     .main-form .form .input-form button {
-      font-family: "Noto Sans Kannada", sans-serif;
+      font-family: "Montserrat", sans-serif;
       font-size: 1.5rem;
       margin-bottom: 4rem;
       padding: 1rem;
@@ -397,6 +425,14 @@ p {
       width: 90%;
       font-size: 1rem;
       margin-bottom: 1rem; }
+  .main__nosotros .juntos {
+    height: 30rem; }
+    .main__nosotros .juntos p {
+      font-size: 2rem;
+      width: 90%;
+      bottom: 2rem; }
+      .main__nosotros .juntos p span {
+        color: #fd7a3e; }
   /* --RESPONSIVE GALERIA BOTSTRAP 768px--*/
   .container-carousel .carousel-inner {
     height: 17.3rem !important; }
@@ -471,6 +507,15 @@ p {
       font-weight: bold; }
     .main__nosotros .main__nosotros-flex .main__nosotros-pareja .main__nosotros-texto p {
       display: none; }
+  .main__nosotros .juntos {
+    height: 22rem; }
+    .main__nosotros .juntos p {
+      font-size: 1.5rem;
+      width: 85%;
+      text-align: center;
+      bottom: 1rem; }
+      .main__nosotros .juntos p span {
+        color: #fd7a3e; }
   /* --RESPONSIVE GALERIA 480px--*/
   .container-carousel .carousel-inner {
     height: 12.8rem !important; }

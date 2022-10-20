@@ -10,24 +10,28 @@
       background-position: center;
       width: 100%;
       .main__nosotros-texto h3 {
-        color: $azul-oscuro;
+        color: $negro;
+        font-weight: bold;
         font-size: 2.5rem;
         text-align: center;
         margin-top: 5rem;
         margin-bottom: 3rem;
       }
-      .main__nosotros-texto p {        
+      .main__nosotros-texto p { 
+        color: $negro;  
+        font-weight: bold;     
         text-align: center;
         margin: auto;
-        width: 65%;
+        width: 75%;
       }
     }
   }
   .nosotros-title {
     font-size: 2.5rem;
     text-align: center;
-    margin: 3rem 0;
-    font-family: "Permanent Marker", cursive;
+    margin: 1.5rem 0;
+    font-family: $fuente-principal;
+    font-weight: bold;
     color: $azul;
   }
   .main__nosotros-grid {
@@ -40,10 +44,40 @@
       img {
         width: 90%;        
       }
+
+      h2{
+        margin-top: 1rem;
+        font-weight: bold;
+        color: $negro;
+      }
+
       p {
         text-align: justify;
+        color: $negro;
         width: 90%;
         margin-top: 1rem;
+      }
+    }
+  }
+  .juntos{
+    background-image: url("../assets/images/juntos1.webp");
+    background-position: center;
+    background-size: cover;
+    height: 40rem;
+    position: relative;
+
+    p{
+      font-family: $fuente-logo;
+      font-size: 2.5rem;
+      color: $blanco;
+      width: 70%;
+      position: absolute; 
+      left: 2rem;     
+      bottom: 3rem;
+      text-align: justify;
+
+      span{
+        color: #fd7a3e;       
       }
     }
   }

@@ -1,7 +1,8 @@
 .main {
   .main__section1 {
     h2 {
-      font-family: "Permanent Marker", cursive;
+      font-family: $fuente-principal;
+      font-weight: bold;
       text-align: center;
       margin-left: 1rem;
       margin-top: 4rem;
@@ -18,9 +19,9 @@
       text-align: justify;
       margin-left: 1rem;
       margin-top: 2rem;
-      color: $azul-oscuro;
+      color: $negro;
       position: absolute;
-      top: 350px;
+      top: 300px;
       font-weight: bold;      
     }
   }
@@ -28,7 +29,7 @@
   .main__section2 {
     text-align: center;
     h2 {
-      font-family: "Permanent Marker", cursive;
+      font-family: $fuente-principal;
       color: $azul;
       margin-top: 3rem;
       font-size: 2.5rem;

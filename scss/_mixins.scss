@@ -26,5 +26,11 @@
       @content;
     }
   }
-    
 
+  @mixin pc1 {
+    @media (max-width: $pc1){
+      @content;
+    }    
+  }
+  
+  

@@ -149,9 +149,9 @@ footer {
     font-size: 2.5rem;
     font-weight: bold; }
   .main .main__section2 article img {
-    width: 60%; }
+    width: 50%; }
   .main .main__section2 .video-tips iframe {
-    width: 100%; }
+    width: 80%; }
   .main .main__section2 article {
     display: flex;
     flex-direction: column;
@@ -173,11 +173,11 @@ footer {
     background-position: center;
     width: 100%; }
     .main__nosotros .main__nosotros-flex .main__nosotros-pareja .main__nosotros-texto h3 {
-      color: #1e1e1f;
+      color: #116295;
       font-weight: bold;
       font-size: 2.5rem;
       text-align: center;
-      margin-top: 5rem;
+      margin-top: 2rem;
       margin-bottom: 3rem; }
     .main__nosotros .main__nosotros-flex .main__nosotros-pareja .main__nosotros-texto p {
       color: #1e1e1f;
@@ -206,7 +206,7 @@ footer {
     .main__nosotros .main__nosotros-grid .container-jota-andre h2 {
       margin-top: 1rem;
       font-weight: bold;
-      color: #1e1e1f; }
+      color: #116295; }
     .main__nosotros .main__nosotros-grid .container-jota-andre p {
       text-align: justify;
       color: #1e1e1f;
@@ -231,14 +231,14 @@ footer {
     .main__nosotros .juntos p span {
       color: #fd7a3e; }
 
-.container-carousel {
+.main-galeria .container-carousel {
   display: flex;
   justify-content: center; }
-  .container-carousel .carousel-inner {
-    width: 65rem;
-    height: 27rem; }
+  .main-galeria .container-carousel .carousel-inner {
+    width: 90%;
+    height: 35rem; }
 
-.titulo-galeria {
+.main-galeria .titulo-galeria {
   text-align: center;
   margin: 2rem;
   font-weight: bold;
@@ -246,20 +246,48 @@ footer {
   font-family: "Montserrat", sans-serif;
   color: #116295; }
 
-.carousel-item {
-  height: 42rem !important; }
-  .carousel-item .d-block {
-    width: 100% !important; }
+.main-galeria .carousel-item img {
+  width: 100%; }
 
-article {
+.main-galeria article {
   display: flex;
   justify-content: space-around; }
 
-p {
+.main-galeria p {
   text-align: justify;
   padding: 0 5rem;
   margin-top: 1.5rem;
   width: 70%; }
+
+.main-galeria .contenedor-grid {
+  max-width: 90%;
+  margin: auto; }
+  .main-galeria .contenedor-grid .grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem; }
+    .main-galeria .contenedor-grid .grid-galeria .contenedor-imagen {
+      margin: auto; }
+      .main-galeria .contenedor-grid .grid-galeria .contenedor-imagen .imagen {
+        width: 100%;
+        border-radius: 1rem; }
+    .main-galeria .contenedor-grid .grid-galeria .panoramica-1 {
+      grid-row: 2 / 3;
+      grid-column: 1 / 3;
+      background-image: url(../assets/images/ciudad3_11zon.webp); }
+    .main-galeria .contenedor-grid .grid-galeria .panoramica-2 {
+      grid-row: 4 / 5;
+      grid-column: 2 / 4;
+      background-image: url(../assets/images/cultura6_11zon.webp); }
+    .main-galeria .contenedor-grid .grid-galeria .panoramica-3 {
+      grid-row: 6 / 7;
+      grid-column: 1 / 3;
+      background-image: url(../assets/images/cultura4_11zon.webp); }
+    .main-galeria .contenedor-grid .grid-galeria .panoramica {
+      border-radius: 1rem;
+      min-height: 320px;
+      background-repeat: no-repeat;
+      background-size: cover; }
 
 .main__destinos h2 {
   font-weight: bold;
@@ -307,7 +335,7 @@ p {
   text-align: center;
   font-size: 3rem;
   font-weight: bold;
-  font-family: "Permanent Marker", cursive;
+  font-family: "Montserrat", sans-serif;
   color: #116295; }
 
 .main-form .img-container-form {
@@ -355,6 +383,13 @@ p {
       color: #ffffff;
       background-color: rgba(0, 0, 0, 0.8); }
 
+@media (max-width: 990px) {
+  .main-galeria .container-carousel .carousel-inner {
+    width: 100%;
+    height: 27rem; }
+  .main-galeria p {
+    width: 100%; } }
+
 @media (max-width: 768px) {
   :root {
     --animate-duration: none;
@@ -373,8 +408,10 @@ p {
     :root .main h3 {
       display: none; }
     :root .main .main__section2 h2 {
-      font-size: 1.5rem; }
+      font-size: 2rem; }
     :root .main .main__section2 article img {
+      width: 90%; }
+    :root .main .main__section2 .video-tips iframe {
       width: 100%; }
     :root .main .main__section2 article p {
       padding: 0 2rem;
@@ -434,16 +471,44 @@ p {
       .main__nosotros .juntos p span {
         color: #fd7a3e; }
   /* --RESPONSIVE GALERIA BOTSTRAP 768px--*/
-  .container-carousel .carousel-inner {
-    height: 17.3rem !important; }
-  .titulo-galeria {
+  .main-galeria .titulo-galeria {
     font-size: 2rem;
     margin: 1rem 0; }
-  p {
-    width: 90%; }
+  .main-galeria .container-carousel .carousel-inner {
+    height: 17.3rem; }
+  .main-galeria .contenedor-grid {
+    max-width: 95%;
+    margin: auto; }
+    .main-galeria .contenedor-grid .grid-galeria {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem; }
+      .main-galeria .contenedor-grid .grid-galeria .contenedor-imagen .imagen {
+        width: 100%;
+        border-radius: 1rem; }
+      .main-galeria .contenedor-grid .grid-galeria .contenedor-imagen .ultima-imagen {
+        display: none; }
+      .main-galeria .contenedor-grid .grid-galeria .panoramica-1 {
+        grid-row: 3 / 4;
+        grid-column: 1 / 3;
+        background-image: url(../assets/images/ciudad3_11zon.webp); }
+      .main-galeria .contenedor-grid .grid-galeria .panoramica-2 {
+        grid-row: 6 / 7;
+        grid-column: 1 / 3;
+        background-image: url(../assets/images/cultura6_11zon.webp); }
+      .main-galeria .contenedor-grid .grid-galeria .panoramica-3 {
+        grid-row: 9 / 10;
+        grid-column: 1 / 3;
+        background-image: url(../assets/images/cultura4_11zon.webp); }
+      .main-galeria .contenedor-grid .grid-galeria .panoramica {
+        min-height: 300px; }
   /* ------RESPONSIVE CONTÁCTANOS 768px------*/
+  .main-form h2 {
+    margin: 1rem;
+    font-size: 2.5rem; }
   .main-form .img-container-form {
-    max-width: 90%; }
+    max-width: 100%;
+    border-radius: 0; }
   .main-form .form .input-form input {
     width: 420px;
     font-size: 1.2rem; }
@@ -517,23 +582,44 @@ p {
       .main__nosotros .juntos p span {
         color: #fd7a3e; }
   /* --RESPONSIVE GALERIA 480px--*/
-  .container-carousel .carousel-inner {
-    height: 12.8rem !important; }
-  .carousel-inner h2 {
+  .main-galeria .titulo-galeria {
     font-size: 1.5rem;
     margin: 1rem 0; }
+  .main-galeria .container-carousel .carousel-inner {
+    height: 13rem; }
+  .main-galeria article p {
+    display: none; }
+  .main-galeria .contenedor-grid {
+    max-width: 95%;
+    margin: auto; }
+    .main-galeria .contenedor-grid .grid-galeria {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1rem; }
+      .main-galeria .contenedor-grid .grid-galeria .contenedor-imagen .imagen {
+        width: 100%;
+        border-radius: 0; }
+      .main-galeria .contenedor-grid .grid-galeria .contenedor-imagen .ultima-imagen {
+        display: block; }
+      .main-galeria .contenedor-grid .grid-galeria .panoramica-1 {
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        background-image: url(../assets/images/ciudad3_11zon.webp); }
+      .main-galeria .contenedor-grid .grid-galeria .panoramica-2 {
+        grid-row: 6 / 7;
+        grid-column: 1 / 2;
+        background-image: url(../assets/images/cultura6_11zon.webp); }
+      .main-galeria .contenedor-grid .grid-galeria .panoramica-3 {
+        grid-row: 10 / 11;
+        grid-column: 1 / 2;
+        background-image: url(../assets/images/cultura4_11zon.webp); }
+      .main-galeria .contenedor-grid .grid-galeria .panoramica {
+        border-radius: 0;
+        min-height: 250px; }
   /* ------RESPONSIVE CONTÁCTANOS 480px------*/
   .main-form h2 {
-    font-size: 2rem;
-    margin: 1rem 0; }
-  .main-form .img-container-form {
-    max-width: 100%;
-    border-radius: 0; }
+    font-size: 2rem; }
   .main-form .form .input-form input {
-    width: 350px;
-    font-size: 1.2rem; }
+    width: 350px; }
   .main-form .form .input-form textarea {
-    width: 350px;
-    font-size: 1.2rem; }
-  .main-form .form .input-form button {
-    font-size: 1.2rem; } }
+    width: 350px; } }

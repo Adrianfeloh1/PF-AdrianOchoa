@@ -1,5 +1,5 @@
 footer {  
-  background-image: url("../assets/images/pareja.webp");
+  background-image: url("../assets/images/footer_11zon.webp");
   background-size: cover;
   background-position: center;  
   .footer__nav__logo2 {
@@ -7,7 +7,7 @@ footer {
     justify-content: flex-end;
     align-items: center;
     a img {
-      margin-top: 10rem;
+      margin-top: 12rem;
       max-width: 100%;
       margin-left: 0.2rem;
       border-radius: 50%;
@@ -17,13 +17,13 @@ footer {
     h2 {
       font-family: $fuente-logo;
       font-size: 3rem;
-      margin-top:10rem;      
+      margin-top:12rem;      
       margin-right: 8rem;
       font-family: $fuente-logo;
       font-weight: bold;
       color: $blanco;
       font-size: 2.5rem;
-      background: -webkit-linear-gradient(90deg, $blanco 0%, $rojo 20%);
+      background: -webkit-linear-gradient(90deg, $rojo 10%, $blanco 50%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -36,6 +36,8 @@ footer {
     justify-content: flex-end;
     align-items: center;    
     a {
+      font-weight: bold;
+      font-size: 1.5rem;
       margin: 1rem 2rem;      
     }
   }
